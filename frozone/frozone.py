@@ -51,7 +51,7 @@ def get_config(verbose):
     from os.path import exists
 
     if not exists(config_path):
-        create_config()
+        create_config(verbose)
 
     from configparser import ConfigParser
 
