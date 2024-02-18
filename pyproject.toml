@@ -12,7 +12,7 @@ script-files = ["frozone/restore.sh"]
 frozone = "frozone.__main__:cli"
 
 [project]
-name = "frozone_recoskyler"
+name = "frozone"
 version = "0.1.0"
 authors = [
   { name="Adil Atalay Hamamcioglu", email="38231748+recoskyler@users.noreply.github.com" },
