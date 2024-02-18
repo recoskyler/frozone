@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# [tool.setuptools]
+# py-modules = ["frozone"]
+
+[tool.setuptools]
+script-files = ["frozone/restore.sh"]
+
+[project.scripts]
+frozone = "frozone.__main__:cli"
+
+[project]
+name = "frozone_recoskyler"
+version = "0.0.7"
+authors = [
+  { name="Adil Atalay Hamamcioglu", email="38231748+recoskyler@users.noreply.github.com" },
+]
+description = "A tool to save and restore the position of windows using wmctrl"
+readme = "README.md"
+requires-python = ">=3.2"
+keywords = [
+    "window manager",
+    "window position",
+    "gnome",
+    "desktop",
+    "linux",
+    "wmctrl",
+    "x11",
+    "xorg",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Utilities",
+    "Topic :: Desktop Environment",
+    "Topic :: Desktop Environment :: Window Managers",
+    "Development Status :: 4 - Beta",
+]
+dependencies = [
+    "setuptools",
+    "Click",
+]
+
+[project.urls]
+Homepage = "https://github.com/recoskyler/frozone"
+Issues = "https://github.com/recoskyler/frozone/issues"
