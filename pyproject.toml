@@ -13,7 +13,7 @@ frozone = "frozone.__main__:cli"
 
 [project]
 name = "frozone_recoskyler"
-version = "0.0.8"
+version = "0.1.0"
 authors = [
   { name="Adil Atalay Hamamcioglu", email="38231748+recoskyler@users.noreply.github.com" },
 ]
