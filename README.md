@@ -13,26 +13,24 @@ A tool to save and restore the position of windows using `wmctrl`.
 ## Installation
 
 ```bash
-$ pip install frozone
+$ pip3 install frozone
 ```
 
 ## Usage
 
-`frozone.py [-h] [-v] [-r] [-o OUTPUT] [-i INPUT] [-c CMD_REGEX]`
-
 ### Saving open windows
 
-`frozone`
+`frozone freeze`
 
 ### Restoring open windows
 
-`frozone -r`
+`frozone restore`
 
 ### Command line arguments
 
 |Argument|Description|
 |---|---|
-|`-h`, `--help`|Show the help message|
+|`--help`|Show the help message|
 |`-v`, `--verbose`|Increase output verbosity|
 |`-r`, `--restore`|Restore the windows to their previous state using the default JSON file. Can be used with `-i`, `--input` to specify the JSON file location|
 |`-o OUTPUT`, `--output OUTPUT`|Set an output path for the JSON file|
@@ -42,6 +40,8 @@ $ pip install frozone
 ## Configuration
 
 `wmctrl` has an issue with positioning due to window frames. To mitigate this issue, you can configure the top and left offsets in the `~/.config/frozone/frozone.conf`.
+
+`cmd_regex` can also be configured in the same file.
 
 ## About
 
